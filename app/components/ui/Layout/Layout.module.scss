@@ -1,0 +1,19 @@
+@import "../../../assets/styles/mixins";
+
+.wrapper {
+  @apply grid;
+  grid-template-columns: 1fr 20fr;
+  height: calc(100vh - 4rem);
+
+  .content {
+    @apply rounded-3xl;
+    background-color: #ebeffd;
+    @include shadow('large', false);
+    z-index: 1;
+    @include shadow('large', false)
+  }
+}
+
+.main {
+  @apply px-6 py-4;
+}

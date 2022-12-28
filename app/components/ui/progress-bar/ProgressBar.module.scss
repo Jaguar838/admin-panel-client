@@ -1,0 +1,18 @@
+.progress {
+  @apply relative m-1 text-center;
+
+  .overflow {
+    @apply relative overflow-hidden w-40 h-20 mx-auto;
+
+    .bar {
+      @apply absolute top-0 w-40 h-40 rounded-full box-border;
+      border: 28px solid #fafafa;
+      border-bottom-color: #9ff162;
+      border-right-color: #9ff162;
+    }
+  }
+  .persent{
+    @apply font-semibold text-2xl -mt-9;
+    color: #fafafa;
+  }
+}

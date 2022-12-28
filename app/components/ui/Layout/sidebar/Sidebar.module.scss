@@ -1,0 +1,48 @@
+
+.sidebar {
+
+  @apply relative;
+  > div {
+    @apply text-center absolute w-full flex flex-col justify-between;
+    background-image: linear-gradient(45deg, #DAE0FB, #eee);
+    min-height: 500px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 10px rgba(45, 8, 125, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+
+    .logo {
+      @apply text-4xl block mb-7;
+      color: #0054BE;
+    }
+
+    .menu {
+
+      .item {
+        &:last-child > a {
+          @apply mb-0;
+        }
+
+        > a {
+          @apply block mb-5 text-xl;
+        }
+
+        svg {
+          @apply mx-auto transition-colors;
+          fill: #1c2034;
+        }
+
+        &:hover svg {
+          fill: #0054BE;
+        }
+
+        &.active svg {
+          @apply fill-primary;
+        }
+      }
+    }
+  }
+}
